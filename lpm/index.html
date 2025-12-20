@@ -609,6 +609,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-install-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Install (Windows)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build from Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1427,6 +1455,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-install-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Install (Windows)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Build from Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1567,17 +1623,20 @@
 
 <h1 id="lpm-lux-package-manager">LPM - Lux Package Manager<a class="headerlink" href="#lpm-lux-package-manager" title="Permanent link">&para;</a></h1>
 <p>Package manager for Lux Runtime projects.</p>
+<p><strong>Repository:</strong> <a href="https://github.com/lux-runtime/lpm">github.com/lux-runtime/lpm</a></p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>LPM comes bundled with Lux. Build from source:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/lux-runtime/lux
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>lux/lpm
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>cargo<span class="w"> </span>build<span class="w"> </span>--release
+<h3 id="quick-install-windows">Quick Install (Windows)<a class="headerlink" href="#quick-install-windows" title="Permanent link">&para;</a></h3>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">irm </span><span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">lux-runtime</span><span class="p">/</span><span class="n">lux</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">iex</span>
 </span></code></pre></div>
-<p>Binary at <code>target/release/lpm.exe</code> (Windows) or <code>target/release/lpm</code> (Linux/macOS).</p>
+<h3 id="build-from-source">Build from Source<a class="headerlink" href="#build-from-source" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/lux-runtime/lpm
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>lpm
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>cargo<span class="w"> </span>build<span class="w"> </span>--release
+</span></code></pre></div>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <h3 id="init">init<a class="headerlink" href="#init" title="Permanent link">&para;</a></h3>
 <p>Initialize a new project interactively.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>lpm<span class="w"> </span>init
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>lpm<span class="w"> </span>init
 </span></code></pre></div>
 <p>Prompts for:</p>
 <ul>
@@ -1600,70 +1659,105 @@
 </ul>
 <h3 id="install">install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h3>
 <p>Install dependencies from <code>lux.toml</code>.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>lpm<span class="w"> </span>install
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>lpm<span class="w"> </span>install
 </span></code></pre></div>
 <h3 id="add">add<a class="headerlink" href="#add" title="Permanent link">&para;</a></h3>
 <p>Add a dependency.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>lpm<span class="w"> </span>add<span class="w"> </span>package-name
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>lpm<span class="w"> </span>add<span class="w"> </span>package-name@1.0.0
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>lpm<span class="w"> </span>add<span class="w"> </span>package-name
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>lpm<span class="w"> </span>add<span class="w"> </span>package-name@1.0.0
 </span></code></pre></div>
 <h3 id="remove">remove<a class="headerlink" href="#remove" title="Permanent link">&para;</a></h3>
 <p>Remove a dependency.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>lpm<span class="w"> </span>remove<span class="w"> </span>package-name
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>lpm<span class="w"> </span>remove<span class="w"> </span>package-name
 </span></code></pre></div>
 <h3 id="run">run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h3>
 <p>Run a script defined in <code>lux.toml</code>.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>lpm<span class="w"> </span>run<span class="w"> </span>dev
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>lpm<span class="w"> </span>run<span class="w"> </span><span class="nb">test</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>lpm<span class="w"> </span>run<span class="w"> </span>dev
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>lpm<span class="w"> </span>run<span class="w"> </span><span class="nb">test</span>
 </span></code></pre></div>
 <h3 id="update">update<a class="headerlink" href="#update" title="Permanent link">&para;</a></h3>
 <p>Update dependencies.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>lpm<span class="w"> </span>update
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>lpm<span class="w"> </span>update
 </span></code></pre></div>
 <h2 id="luxtoml">lux.toml<a class="headerlink" href="#luxtoml" title="Permanent link">&para;</a></h2>
 <p>Project manifest format:</p>
-<div class="language-toml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">[package]</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-project&quot;</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;My Lux project&quot;</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Your Name &lt;email@example.com&gt;&quot;</span><span class="p">]</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/repo&quot;</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">entry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;src/main.luau&quot;</span>
-</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
-</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">[scripts]</span>
-</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="n">dev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;lux src/main.luau&quot;</span>
-</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;lux tests/init.luau&quot;</span>
-</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
-</span><span id="__span-7-14"><a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="k">[dependencies]</span>
-</span><span id="__span-7-15"><a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="n">some-package</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;^1.0.0&quot;</span>
-</span><span id="__span-7-16"><a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
-</span><span id="__span-7-17"><a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="k">[dev-dependencies]</span>
-</span><span id="__span-7-18"><a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="n">test-lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;^2.0.0&quot;</span>
+<div class="language-toml highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">[package]</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-project&quot;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;My Lux project&quot;</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Your Name &lt;email@example.com&gt;&quot;</span><span class="p">]</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;MIT&quot;</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">repository</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/repo&quot;</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">entry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;src/main.luau&quot;</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="k">[scripts]</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="n">dev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;lux src/main.luau&quot;</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;lux tests/init.luau&quot;</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="k">[dependencies]</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="n">some-package</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;^1.0.0&quot;</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="k">[dev-dependencies]</span>
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="n">test-lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;^2.0.0&quot;</span>
 </span></code></pre></div>
 <h2 id="type-definitions">Type Definitions<a class="headerlink" href="#type-definitions" title="Permanent link">&para;</a></h2>
 <p><code>lpm init</code> generates type definitions in <code>.lux/types/</code> for:</p>
-<ul>
-<li>fs</li>
-<li>process</li>
-<li>task</li>
-<li>serde</li>
-<li>regex</li>
-<li>datetime</li>
-<li>stdio</li>
-<li>luau</li>
-<li>ffi</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fs</td>
+<td><code>.lux/types/fs.d.luau</code></td>
+</tr>
+<tr>
+<td>process</td>
+<td><code>.lux/types/process.d.luau</code></td>
+</tr>
+<tr>
+<td>task</td>
+<td><code>.lux/types/task.d.luau</code></td>
+</tr>
+<tr>
+<td>serde</td>
+<td><code>.lux/types/serde.d.luau</code></td>
+</tr>
+<tr>
+<td>regex</td>
+<td><code>.lux/types/regex.d.luau</code></td>
+</tr>
+<tr>
+<td>datetime</td>
+<td><code>.lux/types/datetime.d.luau</code></td>
+</tr>
+<tr>
+<td>stdio</td>
+<td><code>.lux/types/stdio.d.luau</code></td>
+</tr>
+<tr>
+<td>luau</td>
+<td><code>.lux/types/luau.d.luau</code></td>
+</tr>
+<tr>
+<td>ffi</td>
+<td><code>.lux/types/ffi.d.luau</code></td>
+</tr>
+</tbody>
+</table>
 <p>This enables IDE autocomplete for <code>require("@lux/...")</code>.</p>
 <h2 id="luaurc-configuration">.luaurc Configuration<a class="headerlink" href="#luaurc-configuration" title="Permanent link">&para;</a></h2>
 <p>Generated <code>.luaurc</code>:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">{</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="nt">&quot;languageMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;strict&quot;</span><span class="p">,</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">    </span><span class="nt">&quot;aliases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">        </span><span class="nt">&quot;pkg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;.lux_modules/packages&quot;</span><span class="p">,</span>
-</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">        </span><span class="nt">&quot;lux&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;.lux/types&quot;</span>
-</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="p">}</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="nt">&quot;languageMode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;strict&quot;</span><span class="p">,</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">&quot;aliases&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">        </span><span class="nt">&quot;pkg&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;.lux_modules/packages&quot;</span><span class="p">,</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">        </span><span class="nt">&quot;lux&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;.lux/types&quot;</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">}</span>
 </span></code></pre></div>
 
 
