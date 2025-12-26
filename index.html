@@ -475,6 +475,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#global-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1546,6 +1557,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#global-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1601,12 +1623,12 @@
 <h1 id="lux-runtime">Lux Runtime<a class="headerlink" href="#lux-runtime" title="Permanent link">&para;</a></h1>
 <div align="center">
     <img src="assets/logo.png" alt="Lux Logo" width="120">
-    <p><strong>Standalone Luau Runtime</strong></p>
+    <p><strong>Standalone Luau Runtime with Native FFI</strong></p>
     <a href="https://discord.gg/QfU7rweBCC">Discord</a> · <a href="https://github.com/lux-runtime/lux">GitHub</a> · <a href="https://github.com/lux-runtime/lpm">LPM</a>
 </div>
 
 <hr />
-<p>Lux is a standalone runtime for <a href="https://luau-lang.org/">Luau</a> scripts built in Rust. Execute Luau outside of Roblox with a complete standard library.</p>
+<p>Lux is a standalone runtime for <a href="https://luau-lang.org/">Luau</a> scripts built in Rust. Execute Luau outside of Roblox with a complete standard library and native FFI support.</p>
 <h2 id="quick-install-windows">Quick Install (Windows)<a class="headerlink" href="#quick-install-windows" title="Permanent link">&para;</a></h2>
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">irm </span><span class="n">https</span><span class="p">://</span><span class="n">raw</span><span class="p">.</span><span class="n">githubusercontent</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">lux-runtime</span><span class="p">/</span><span class="n">lux</span><span class="p">/</span><span class="n">main</span><span class="p">/</span><span class="n">install</span><span class="p">.</span><span class="n">ps1</span> <span class="p">|</span> <span class="nb">iex</span>
 </span></code></pre></div>
@@ -1615,16 +1637,24 @@
 <li><strong>Complete Standard Library</strong> - Filesystem, process, task scheduling, serialization, regex, datetime, stdio</li>
 <li><strong>Foreign Function Interface</strong> - Call native C libraries using LuaJIT-style FFI</li>
 <li><strong>Async Support</strong> - Cooperative multitasking with <code>task.spawn</code>, <code>task.wait</code>, <code>task.delay</code>, <code>task.defer</code></li>
-<li><strong>Package Manager</strong> - <a href="https://github.com/lux-runtime/lpm">LPM</a> for dependency management and project initialization</li>
+<li><strong>Roblox-Compatible Types</strong> - Vector2, Vector3, Color3, UDim, UDim2, DateTime</li>
+<li><strong>Procedural Generation</strong> - Perlin/Simplex noise functions for terrain and textures</li>
+<li><strong>Utilities</strong> - UUID generation, Base64 encoding, cross-platform Enum keycodes</li>
+<li><strong>Package Manager</strong> - <a href="https://github.com/lux-runtime/lpm">LPM</a> for dependency management</li>
 <li><strong>Cross-Platform</strong> - Windows, Linux, macOS</li>
 </ul>
 <h2 id="quick-example">Quick Example<a class="headerlink" href="#quick-example" title="Permanent link">&para;</a></h2>
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/fs&quot;</span><span class="p">)</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">serde</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/serde&quot;</span><span class="p">)</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="kd">local</span><span class="w"> </span><span class="nv">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">fs</span><span class="p">.</span><span class="nf">readFile</span><span class="p">(</span><span class="s2">&quot;config.json&quot;</span><span class="p">)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kd">local</span><span class="w"> </span><span class="nv">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">serde</span><span class="p">.</span><span class="nf">decode</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">content</span><span class="p">)</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nb">print</span><span class="p">(</span><span class="nv">config</span><span class="p">.</span><span class="py">name</span><span class="p">)</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/uuid&quot;</span><span class="p">)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1">-- Read and parse JSON</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kd">local</span><span class="w"> </span><span class="nv">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">fs</span><span class="p">.</span><span class="nf">readFile</span><span class="p">(</span><span class="s2">&quot;config.json&quot;</span><span class="p">)</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="kd">local</span><span class="w"> </span><span class="nv">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">serde</span><span class="p">.</span><span class="nf">decode</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">content</span><span class="p">)</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1">-- Generate unique ID</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="nv">config</span><span class="p">.</span><span class="py">sessionId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">v4</span><span class="p">()</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Session:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">config</span><span class="p">.</span><span class="py">sessionId</span><span class="p">)</span>
 </span></code></pre></div>
 <h2 id="standard-library">Standard Library<a class="headerlink" href="#standard-library" title="Permanent link">&para;</a></h2>
 <table>
@@ -1671,6 +1701,57 @@
 <td><a href="api/ffi/">ffi</a></td>
 <td>Foreign Function Interface</td>
 </tr>
+<tr>
+<td><a href="api/signal/">signal</a></td>
+<td>High-performance events</td>
+</tr>
+<tr>
+<td><a href="api/uuid/">uuid</a></td>
+<td>UUID v4/v7 generation</td>
+</tr>
+<tr>
+<td><a href="api/noise/">noise</a></td>
+<td>Procedural noise (Perlin, Simplex)</td>
+</tr>
+<tr>
+<td><a href="api/base64/">base64</a></td>
+<td>Base64 encoding/decoding</td>
+</tr>
+</tbody>
+</table>
+<h2 id="global-types">Global Types<a class="headerlink" href="#global-types" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector2, Vector3</td>
+<td>2D/3D vectors with math operations</td>
+</tr>
+<tr>
+<td>Color3</td>
+<td>RGB colors with HSV/Hex conversion</td>
+</tr>
+<tr>
+<td>UDim, UDim2</td>
+<td>UI dimension types</td>
+</tr>
+<tr>
+<td>Rect, NumberRange</td>
+<td>Rectangles and numeric ranges</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>Date/time with timezone support</td>
+</tr>
+<tr>
+<td>Enum</td>
+<td>KeyCode, MouseButton, EasingStyle</td>
+</tr>
 </tbody>
 </table>
 <h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
@@ -1693,7 +1774,7 @@
 <td>Package Manager</td>
 </tr>
 <tr>
-<td><a href="https://github.com/lux-runtime/docs">lux-runtime/docs</a></td>
+<td><a href="https://github.com/lux-runtime/lux-docs">lux-runtime/lux-docs</a></td>
 <td>Documentation</td>
 </tr>
 </tbody>

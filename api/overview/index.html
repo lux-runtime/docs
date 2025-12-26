@@ -688,10 +688,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules" class="md-nav__link">
+  <a href="#core-modules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modules
+        Core Modules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility Modules
       
     </span>
   </a>
@@ -703,6 +714,17 @@
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Types
       
     </span>
   </a>
@@ -1454,10 +1476,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modules" class="md-nav__link">
+  <a href="#core-modules" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modules
+        Core Modules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utility-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utility Modules
       
     </span>
   </a>
@@ -1469,6 +1502,17 @@
     <span class="md-ellipsis">
       
         Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Global Types
       
     </span>
   </a>
@@ -1497,7 +1541,7 @@
 
 <h1 id="standard-library">Standard Library<a class="headerlink" href="#standard-library" title="Permanent link">&para;</a></h1>
 <p>All modules are imported using <code>require("@lux/&lt;module&gt;")</code>.</p>
-<h2 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h2>
+<h2 id="core-modules">Core Modules<a class="headerlink" href="#core-modules" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -1523,10 +1567,6 @@
 <td>Async task scheduling</td>
 </tr>
 <tr>
-<td><a href="../signal/">signal</a></td>
-<td>Event system</td>
-</tr>
-<tr>
 <td><a href="../serde/">serde</a></td>
 <td>Serialization and hashing</td>
 </tr>
@@ -1550,16 +1590,81 @@
 <td><a href="../ffi/">ffi</a></td>
 <td>Foreign Function Interface</td>
 </tr>
+<tr>
+<td><a href="../signal/">signal</a></td>
+<td>Event system</td>
+</tr>
+</tbody>
+</table>
+<h2 id="utility-modules">Utility Modules<a class="headerlink" href="#utility-modules" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../uuid/">uuid</a></td>
+<td>UUID v4/v7 generation</td>
+</tr>
+<tr>
+<td><a href="../noise/">noise</a></td>
+<td>Procedural noise (Perlin, Simplex, FBM)</td>
+</tr>
+<tr>
+<td><a href="../base64/">base64</a></td>
+<td>Base64 encoding/decoding</td>
+</tr>
 </tbody>
 </table>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/fs&quot;</span><span class="p">)</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">serde</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/serde&quot;</span><span class="p">)</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kd">local</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">fs</span><span class="p">.</span><span class="nf">readFile</span><span class="p">(</span><span class="s2">&quot;config.json&quot;</span><span class="p">)</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">local</span><span class="w"> </span><span class="nv">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">serde</span><span class="p">.</span><span class="nf">decode</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">json</span><span class="p">)</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="nv">config</span><span class="p">.</span><span class="py">name</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/uuid&quot;</span><span class="p">)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kd">local</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">fs</span><span class="p">.</span><span class="nf">readFile</span><span class="p">(</span><span class="s2">&quot;config.json&quot;</span><span class="p">)</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kd">local</span><span class="w"> </span><span class="nv">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">serde</span><span class="p">.</span><span class="nf">decode</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">json</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nv">config</span><span class="p">.</span><span class="py">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">v4</span><span class="p">()</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nb">print</span><span class="p">(</span><span class="nv">config</span><span class="p">.</span><span class="py">name</span><span class="p">,</span><span class="w"> </span><span class="nv">config</span><span class="p">.</span><span class="py">id</span><span class="p">)</span>
 </span></code></pre></div>
+<h2 id="global-types">Global Types<a class="headerlink" href="#global-types" title="Permanent link">&para;</a></h2>
+<p>These types are available globally without require:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector2, Vector3</td>
+<td>2D/3D vectors with math operations</td>
+</tr>
+<tr>
+<td>Color3</td>
+<td>RGB colors with conversions</td>
+</tr>
+<tr>
+<td>UDim, UDim2</td>
+<td>UI dimension types</td>
+</tr>
+<tr>
+<td>Rect, NumberRange</td>
+<td>Rectangles and ranges</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>Date/time handling</td>
+</tr>
+<tr>
+<td>Enum</td>
+<td>Enumeration types (KeyCode, MouseButton, etc.)</td>
+</tr>
+</tbody>
+</table>
 
 
 
