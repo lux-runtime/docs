@@ -15,6 +15,10 @@
         <link rel="canonical" href="https://lux-runtime.github.io/lux-docs/api/globals/">
       
       
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../fs/">
       
       
         
@@ -255,10 +259,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../overview/" class="md-tabs__link">
           
   
@@ -562,26 +568,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -599,7 +610,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -633,6 +644,391 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Globals
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Globals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-globals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Globals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Globals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_g" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _G
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        _VERSION
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#print" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        print
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        warn
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#require" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        require
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcall-ypcall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pcall / ypcall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xpcall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        xpcall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type-typeof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        type / typeof
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Types
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vector2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vector3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vector3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#udim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UDim
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#udim2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UDim2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numberrange" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NumberRange
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enumkeycode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.KeyCode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enummousebutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.MouseButton
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeasingstyle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.EasingStyle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeasingdirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.EasingDirection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumsortorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.SortOrder
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Utilities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        task
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -877,6 +1273,118 @@
     
   
     ffi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    signal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uuid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    uuid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../noise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    noise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../base64/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    base64
   
 
     
@@ -1344,32 +1852,21 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#script" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        script
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#roblox-compatible-types" class="md-nav__link">
+  <a href="#data-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Roblox-compatible Types
+        Data Types
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Roblox-compatible Types">
+    <nav class="md-nav" aria-label="Data Types">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1449,11 +1946,72 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#tweeninfo" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enum" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TweenInfo
+        Enum
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Enum">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enumkeycode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.KeyCode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enummousebutton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.MouseButton
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeasingstyle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.EasingStyle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumeasingdirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.EasingDirection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enumsortorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enum.SortOrder
       
     </span>
   </a>
@@ -1476,17 +2034,6 @@
   
     <nav class="md-nav" aria-label="Utilities">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bit32" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        bit32
-      
-    </span>
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#task" class="md-nav__link">
@@ -1565,113 +2112,366 @@
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">type</span><span class="p">(</span><span class="nv">v</span><span class="p">:</span><span class="w"> </span><span class="py">any</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
 </span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nf">typeof</span><span class="p">(</span><span class="nv">v</span><span class="p">:</span><span class="w"> </span><span class="py">any</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
 </span></code></pre></div>
-<h3 id="script">script<a class="headerlink" href="#script" title="Permanent link">&para;</a></h3>
-<p>A reference to the current running script instance (if applicable).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nv">script</span><span class="p">:</span><span class="w"> </span><span class="py">Script</span><span class="err">?</span>
-</span></code></pre></div>
 <hr />
-<h2 id="roblox-compatible-types">Roblox-compatible Types<a class="headerlink" href="#roblox-compatible-types" title="Permanent link">&para;</a></h2>
+<h2 id="data-types">Data Types<a class="headerlink" href="#data-types" title="Permanent link">&para;</a></h2>
 <p>Lux includes data types compatible with Roblox API for easier portability.</p>
 <h3 id="color3">Color3<a class="headerlink" href="#color3" title="Permanent link">&para;</a></h3>
-<p>RGB color value.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Color3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">R</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">G</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">B</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
+<p>RGB color value (0-1 range).</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Color3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">R</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">G</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">B</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>Color3.new(r, g, b)</code>
-- <code>Color3.fromRGB(r, g, b)</code>
-- <code>Color3.fromHSV(h, s, v)</code>
-- <code>Color3.fromHex(hex)</code></p>
-<p><strong>Methods:</strong>
-- <code>:Lerp(goal, alpha)</code>
-- <code>:ToHSV()</code>
-- <code>:ToHex()</code></p>
+<p><strong>Constructors:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Color3.new(r, g, b)</code></td>
+<td>Create from 0-1 values</td>
+</tr>
+<tr>
+<td><code>Color3.fromRGB(r, g, b)</code></td>
+<td>Create from 0-255 values</td>
+</tr>
+<tr>
+<td><code>Color3.fromHSV(h, s, v)</code></td>
+<td>Create from HSV</td>
+</tr>
+<tr>
+<td><code>Color3.fromHex(hex)</code></td>
+<td>Create from hex string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:Lerp(goal, alpha)</code></td>
+<td>Color3</td>
+<td>Interpolate between colors</td>
+</tr>
+<tr>
+<td><code>:ToHSV()</code></td>
+<td>h, s, v</td>
+<td>Convert to HSV</td>
+</tr>
+<tr>
+<td><code>:ToHex()</code></td>
+<td>string</td>
+<td>Convert to hex ("FF0000")</td>
+</tr>
+</tbody>
+</table>
 <h3 id="vector2">Vector2<a class="headerlink" href="#vector2" title="Permanent link">&para;</a></h3>
-<p>2D vector.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Vector2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">X</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Y</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Unit</span><span class="p">:</span><span class="w"> </span><span class="py">Vector2</span><span class="w"> </span><span class="p">}</span>
+<p>2D vector for positions and directions.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Vector2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">X</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Y</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Unit</span><span class="p">:</span><span class="w"> </span><span class="py">Vector2</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>Vector2.new(x, y)</code>
-- <code>Vector2.zero</code>
-- <code>Vector2.one</code></p>
-<p><strong>Methods:</strong>
-- <code>:Lerp(goal, alpha)</code>
-- <code>:Dot(other)</code>
-- <code>:Cross(other)</code></p>
+<p><strong>Constructors:</strong></p>
+<ul>
+<li><code>Vector2.new(x, y)</code> - Create from components</li>
+<li><code>Vector2.zero</code> - Constant (0, 0)</li>
+<li><code>Vector2.one</code> - Constant (1, 1)</li>
+</ul>
+<p><strong>Methods:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:Lerp(goal, alpha)</code></td>
+<td>Vector2</td>
+<td>Linear interpolation</td>
+</tr>
+<tr>
+<td><code>:Dot(other)</code></td>
+<td>number</td>
+<td>Dot product</td>
+</tr>
+<tr>
+<td><code>:Cross(other)</code></td>
+<td>number</td>
+<td>2D cross (z-component)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>-</code> (unary), <code>==</code></p>
 <h3 id="vector3">Vector3<a class="headerlink" href="#vector3" title="Permanent link">&para;</a></h3>
-<p>3D vector.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">X</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Y</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Z</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Unit</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="w"> </span><span class="p">}</span>
+<p>3D vector for positions and directions.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Vector3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">X</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Y</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Z</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Magnitude</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Unit</span><span class="p">:</span><span class="w"> </span><span class="py">Vector3</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>Vector3.new(x, y, z)</code>
-- <code>Vector3.zero</code>
-- <code>Vector3.one</code></p>
-<p><strong>Methods:</strong>
-- <code>:Lerp(goal, alpha)</code>
-- <code>:Dot(other)</code>
-- <code>:Cross(other)</code></p>
+<p><strong>Constructors:</strong></p>
+<ul>
+<li><code>Vector3.new(x, y, z)</code> - Create from components</li>
+<li><code>Vector3.zero</code> - Constant (0, 0, 0)</li>
+<li><code>Vector3.one</code> - Constant (1, 1, 1)</li>
+</ul>
+<p><strong>Methods:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Returns</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:Lerp(goal, alpha)</code></td>
+<td>Vector3</td>
+<td>Linear interpolation</td>
+</tr>
+<tr>
+<td><code>:Dot(other)</code></td>
+<td>number</td>
+<td>Dot product</td>
+</tr>
+<tr>
+<td><code>:Cross(other)</code></td>
+<td>Vector3</td>
+<td>Cross product (perpendicular)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Operators:</strong> <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>-</code> (unary), <code>==</code></p>
 <h3 id="udim">UDim<a class="headerlink" href="#udim" title="Permanent link">&para;</a></h3>
-<p>UI Dimension (Scale + Offset).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">UDim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">Scale</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Offset</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
+<p>UI Dimension with scale and offset.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">UDim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">Scale</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Offset</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>UDim.new(scale, offset)</code></p>
+<p>Final size = <code>parentSize * Scale + Offset</code></p>
+<p><strong>Constructors:</strong></p>
+<ul>
+<li><code>UDim.new(scale, offset)</code></li>
+</ul>
 <h3 id="udim2">UDim2<a class="headerlink" href="#udim2" title="Permanent link">&para;</a></h3>
-<p>2D UI Dimension (X: UDim, Y: UDim).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">UDim2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="nv">X</span><span class="p">:</span><span class="w"> </span><span class="py">UDim</span><span class="p">,</span><span class="w"> </span><span class="nv">Y</span><span class="p">:</span><span class="w"> </span><span class="py">UDim</span><span class="p">,</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="nv">Width</span><span class="p">:</span><span class="w"> </span><span class="py">UDim</span><span class="p">,</span><span class="w"> </span><span class="nv">Height</span><span class="p">:</span><span class="w"> </span><span class="py">UDim</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="p">}</span>
+<p>2D UI Dimension for positions and sizes.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">UDim2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">X</span><span class="p">:</span><span class="w"> </span><span class="py">UDim</span><span class="p">,</span><span class="w"> </span><span class="nv">Y</span><span class="p">:</span><span class="w"> </span><span class="py">UDim</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>UDim2.new( xScale, xOffset, yScale, yOffset )</code>
-- <code>UDim2.fromScale(x, y)</code>
-- <code>UDim2.fromOffset(x, y)</code></p>
+<p><strong>Constructors:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>UDim2.new(xScale, xOffset, yScale, yOffset)</code></td>
+<td>Full constructor</td>
+</tr>
+<tr>
+<td><code>UDim2.fromScale(x, y)</code></td>
+<td>Scale only (offset = 0)</td>
+</tr>
+<tr>
+<td><code>UDim2.fromOffset(x, y)</code></td>
+<td>Offset only (scale = 0)</td>
+</tr>
+</tbody>
+</table>
 <h3 id="rect">Rect<a class="headerlink" href="#rect" title="Permanent link">&para;</a></h3>
 <p>2D Rectangle.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">Min</span><span class="p">:</span><span class="w"> </span><span class="py">Vector2</span><span class="p">,</span><span class="w"> </span><span class="nv">Max</span><span class="p">:</span><span class="w"> </span><span class="py">Vector2</span><span class="p">,</span><span class="w"> </span><span class="nv">Width</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Height</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">Width</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Height</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>Rect.new(minX, minY, maxX, maxY)</code></p>
+<p><strong>Constructors:</strong></p>
+<ul>
+<li><code>Rect.new(minX, minY, maxX, maxY)</code></li>
+</ul>
 <h3 id="numberrange">NumberRange<a class="headerlink" href="#numberrange" title="Permanent link">&para;</a></h3>
-<p>A range of numbers.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">NumberRange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">Min</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Max</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
+<p>A range between two numbers.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">NumberRange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">Min</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">Max</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>NumberRange.new(min, max)</code></p>
-<h3 id="tweeninfo">TweenInfo<a class="headerlink" href="#tweeninfo" title="Permanent link">&para;</a></h3>
-<p>Animation configuration info (data container).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">TweenInfo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="nv">Time</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="nv">EasingStyle</span><span class="p">:</span><span class="w"> </span><span class="py">Enum</span><span class="p">.</span><span class="py">EasingStyle</span><span class="p">,</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="nv">EasingDirection</span><span class="p">:</span><span class="w"> </span><span class="py">Enum</span><span class="p">.</span><span class="py">EasingDirection</span><span class="p">,</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">    </span><span class="nv">RepeatCount</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">    </span><span class="nv">Reverses</span><span class="p">:</span><span class="w"> </span><span class="py">boolean</span><span class="p">,</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="nv">DelayTime</span><span class="p">:</span><span class="w"> </span><span class="py">number</span>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="p">}</span>
+<p><strong>Constructors:</strong></p>
+<ul>
+<li><code>NumberRange.new(min, max)</code> - Coordinates auto-normalize</li>
+</ul>
+<hr />
+<h2 id="enum">Enum<a class="headerlink" href="#enum" title="Permanent link">&para;</a></h2>
+<p>Enumeration types for type-safe constants.</p>
+<h3 id="enumkeycode">Enum.KeyCode<a class="headerlink" href="#enumkeycode" title="Permanent link">&para;</a></h3>
+<p>Platform-specific keyboard key codes for FFI input handling.</p>
+<ul>
+<li><strong>Windows</strong>: VK_* codes (for <code>GetAsyncKeyState</code>, etc.)</li>
+<li><strong>Linux</strong>: evdev KEY_* codes</li>
+<li><strong>macOS</strong>: Carbon kVK_* codes</li>
+</ul>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">-- FFI example</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">cdef</span><span class="p">(</span><span class="s2">&quot;int16_t GetAsyncKeyState(int vKey);&quot;</span><span class="p">)</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="kr">if</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="py">C</span><span class="p">.</span><span class="nf">GetAsyncKeyState</span><span class="p">(</span><span class="nv">Enum</span><span class="p">.</span><span class="py">KeyCode</span><span class="p">.</span><span class="py">A</span><span class="p">)</span><span class="w"> </span><span class="o">~=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A key is pressed!&quot;</span><span class="p">)</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="kr">end</span>
 </span></code></pre></div>
-<p><strong>Constructors:</strong>
-- <code>TweenInfo.new(time, style, direction, repeatCount, reverses, delayTime)</code></p>
+<p><strong>Keys available:</strong> A-Z, Zero-Nine, F1-F12, Escape, Tab, Space, Return, Backspace, Delete, arrows (Up/Down/Left/Right), modifiers (LeftShift, RightShift, LeftControl, etc.), Numpad0-9, and more.</p>
+<h3 id="enummousebutton">Enum.MouseButton<a class="headerlink" href="#enummousebutton" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left</td>
+<td>0</td>
+<td>Primary button</td>
+</tr>
+<tr>
+<td>Right</td>
+<td>1</td>
+<td>Secondary button</td>
+</tr>
+<tr>
+<td>Middle</td>
+<td>2</td>
+<td>Wheel click</td>
+</tr>
+<tr>
+<td>Button4</td>
+<td>3</td>
+<td>Extra button</td>
+</tr>
+<tr>
+<td>Button5</td>
+<td>4</td>
+<td>Extra button</td>
+</tr>
+</tbody>
+</table>
+<h3 id="enumeasingstyle">Enum.EasingStyle<a class="headerlink" href="#enumeasingstyle" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear</td>
+<td>0</td>
+<td>Constant speed</td>
+</tr>
+<tr>
+<td>Quad</td>
+<td>1</td>
+<td>t²</td>
+</tr>
+<tr>
+<td>Cubic</td>
+<td>2</td>
+<td>t³</td>
+</tr>
+<tr>
+<td>Quart</td>
+<td>3</td>
+<td>t⁴</td>
+</tr>
+<tr>
+<td>Quint</td>
+<td>4</td>
+<td>t⁵</td>
+</tr>
+<tr>
+<td>Sine</td>
+<td>5</td>
+<td>Sinusoidal</td>
+</tr>
+<tr>
+<td>Expo</td>
+<td>6</td>
+<td>Exponential</td>
+</tr>
+<tr>
+<td>Circ</td>
+<td>7</td>
+<td>Circular</td>
+</tr>
+<tr>
+<td>Elastic</td>
+<td>8</td>
+<td>Spring overshoot</td>
+</tr>
+<tr>
+<td>Back</td>
+<td>9</td>
+<td>Slight overshoot</td>
+</tr>
+<tr>
+<td>Bounce</td>
+<td>10</td>
+<td>Bouncing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="enumeasingdirection">Enum.EasingDirection<a class="headerlink" href="#enumeasingdirection" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In</td>
+<td>0</td>
+<td>Slow start</td>
+</tr>
+<tr>
+<td>Out</td>
+<td>1</td>
+<td>Slow end</td>
+</tr>
+<tr>
+<td>InOut</td>
+<td>2</td>
+<td>Slow start and end</td>
+</tr>
+</tbody>
+</table>
+<h3 id="enumsortorder">Enum.SortOrder<a class="headerlink" href="#enumsortorder" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LayoutOrder</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="utilities">Utilities<a class="headerlink" href="#utilities" title="Permanent link">&para;</a></h2>
-<h3 id="bit32">bit32<a class="headerlink" href="#bit32" title="Permanent link">&para;</a></h3>
-<p>Bitwise operations library (Lua 5.2 compatible).</p>
-<p><strong>Functions:</strong>
-- <code>bit32.band(...)</code>
-- <code>bit32.bor(...)</code>
-- <code>bit32.bxor(...)</code>
-- <code>bit32.bnot(x)</code>
-- <code>bit32.lshift(x, disp)</code>
-- <code>bit32.rshift(x, disp)</code>
-- <code>bit32.arshift(x, disp)</code>
-- <code>bit32.lrotate(x, disp)</code>
-- <code>bit32.rrotate(x, disp)</code>
-- <code>bit32.btest(...)</code>
-- <code>bit32.extract(n, field, width)</code>
-- <code>bit32.replace(n, v, field, width)</code>
-- <code>bit32.countlz(n)</code>
-- <code>bit32.countrz(n)</code></p>
 <h3 id="task">task<a class="headerlink" href="#task" title="Permanent link">&para;</a></h3>
-<p>Reference to the <a href="../task/"><code>task</code></a> library.</p>
+<p>Reference to the <a href="../task/"><code>task</code></a> library for coroutine scheduling.</p>
 
 
 

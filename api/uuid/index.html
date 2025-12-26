@@ -12,13 +12,13 @@
         <meta name="author" content="Yan">
       
       
-        <link rel="canonical" href="https://lux-runtime.github.io/lux-docs/api/task/">
+        <link rel="canonical" href="https://lux-runtime.github.io/lux-docs/api/uuid/">
       
       
-        <link rel="prev" href="../process/">
+        <link rel="prev" href="../signal/">
       
       
-        <link rel="next" href="../serde/">
+        <link rel="next" href="../noise/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>task - Lux Runtime</title>
+        <title>uuid - Lux Runtime</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task" class="md-skip">
+        <a href="#uuid" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              task
+              uuid
             
           </span>
         </div>
@@ -737,37 +737,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    task
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../task/" class="md-nav__link">
         
   
   
@@ -783,92 +756,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#spawn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        spawn
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#defer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        defer
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#delay" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        delay
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wait" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        wait
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cancel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        cancel
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1074,10 +961,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../uuid/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    uuid
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1093,6 +1007,148 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uuidv4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.v4()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uuidv7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.v7()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uuidisvalids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.isValid(s)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uuidparses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.parse(s)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uuidformatbuf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.format(buf)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constants
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Constants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uuidnil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.nil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1498,10 +1554,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#spawn" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        spawn
+        Overview
       
     </span>
   </a>
@@ -1509,54 +1565,110 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#defer" class="md-nav__link">
+  <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        defer
+        Functions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uuidv4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.v4()
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#delay" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#uuidv7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        delay
+        uuid.v7()
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#wait" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#uuidisvalids" class="md-nav__link">
     <span class="md-ellipsis">
       
-        wait
+        uuid.isValid(s)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#cancel" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#uuidparses" class="md-nav__link">
     <span class="md-ellipsis">
       
-        cancel
+        uuid.parse(s)
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#uuidformatbuf" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Examples
+        uuid.format(buf)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Constants
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Constants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uuidnil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        uuid.nil
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Cases
       
     </span>
   </a>
@@ -1583,81 +1695,119 @@
   
 
 
-<h1 id="task">task<a class="headerlink" href="#task" title="Permanent link">&para;</a></h1>
-<p>Task scheduling with cooperative multitasking.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">task</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/task&quot;</span><span class="p">)</span>
+<h1 id="uuid">UUID<a class="headerlink" href="#uuid" title="Permanent link">&para;</a></h1>
+<p>Generate and manipulate UUIDs (Universally Unique Identifiers).</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">uuid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">require</span><span class="p">(</span><span class="s2">&quot;@lux/uuid&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-<hr />
-<h2 id="spawn">spawn<a class="headerlink" href="#spawn" title="Permanent link">&para;</a></h2>
-<p>Instantly runs a function or thread. If the spawned task yields, the parent thread resumes.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">task</span><span class="p">.</span><span class="py">spawn</span><span class="o">&lt;</span><span class="nv">T</span><span class="o">..</span><span class="p">.</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">functionOrThread</span><span class="p">:</span><span class="w"> </span><span class="py">thread</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">(</span><span class="nv">T</span><span class="o">..</span><span class="p">.)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">...</span><span class="nv">any</span><span class="p">,</span><span class="w"> </span><span class="p">...:</span><span class="w"> </span><span class="nv">T</span><span class="o">..</span><span class="p">.)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">thread</span>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>UUIDs are 128-bit identifiers that are globally unique. This library supports:</p>
+<ul>
+<li><strong>UUID v4</strong>: Random-based (most common)</li>
+<li><strong>UUID v7</strong>: Timestamp-based, sortable by creation time</li>
+</ul>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<h3 id="uuidv4"><code>uuid.v4()</code><a class="headerlink" href="#uuidv4" title="Permanent link">&para;</a></h3>
+<p>Generates a random UUID (version 4).</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">v4</span><span class="p">()</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nf">print</span><span class="p">(</span><span class="nv">id</span><span class="p">)</span><span class="w"> </span><span class="c1">-- &quot;550e8400-e29b-41d4-a716-446655440000&quot;</span>
 </span></code></pre></div>
+<p><strong>Returns:</strong> <code>string</code> - A 36-character UUID string</p>
 <hr />
-<h2 id="defer">defer<a class="headerlink" href="#defer" title="Permanent link">&para;</a></h2>
-<p>Schedules a function to run at the end of the current task queue.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">task</span><span class="p">.</span><span class="py">defer</span><span class="o">&lt;</span><span class="nv">T</span><span class="o">..</span><span class="p">.</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">functionOrThread</span><span class="p">:</span><span class="w"> </span><span class="py">thread</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">(</span><span class="nv">T</span><span class="o">..</span><span class="p">.)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">...</span><span class="nv">any</span><span class="p">,</span><span class="w"> </span><span class="p">...:</span><span class="w"> </span><span class="nv">T</span><span class="o">..</span><span class="p">.)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">thread</span>
+<h3 id="uuidv7"><code>uuid.v7()</code><a class="headerlink" href="#uuidv7" title="Permanent link">&para;</a></h3>
+<p>Generates a timestamp-based UUID (version 7). UUIDs generated later sort after earlier ones.</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">id1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">v7</span><span class="p">()</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">task</span><span class="p">.</span><span class="nf">wait</span><span class="p">(</span><span class="mf">0.001</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">local</span><span class="w"> </span><span class="nv">id2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">v7</span><span class="p">()</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">-- id2 &gt; id1 when sorted alphabetically</span>
 </span></code></pre></div>
+<p><strong>Returns:</strong> <code>string</code> - A 36-character sortable UUID string</p>
 <hr />
-<h2 id="delay">delay<a class="headerlink" href="#delay" title="Permanent link">&para;</a></h2>
-<p>Schedules a function to run after a delay (in seconds).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">task</span><span class="p">.</span><span class="py">delay</span><span class="o">&lt;</span><span class="nv">T</span><span class="o">..</span><span class="p">.</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">duration</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w"> </span><span class="nv">functionOrThread</span><span class="p">:</span><span class="w"> </span><span class="py">thread</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">(</span><span class="nv">T</span><span class="o">..</span><span class="p">.)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">...</span><span class="nv">any</span><span class="p">,</span><span class="w"> </span><span class="p">...:</span><span class="w"> </span><span class="nv">T</span><span class="o">..</span><span class="p">.)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">thread</span>
+<h3 id="uuidisvalids"><code>uuid.isValid(s)</code><a class="headerlink" href="#uuidisvalids" title="Permanent link">&para;</a></h3>
+<p>Validates if a string is a valid UUID format.</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">uuid</span><span class="p">.</span><span class="nf">isValid</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">550</span><span class="s2">e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">-- true</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">uuid</span><span class="p">.</span><span class="nf">isValid</span><span class="p">(</span><span class="s2">&quot;not-a-uuid&quot;</span><span class="p">)</span><span class="w"> </span><span class="c1">-- false</span>
 </span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>s</code></td>
+<td><code>string</code></td>
+<td>The string to validate</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>boolean</code></p>
 <hr />
-<h2 id="wait">wait<a class="headerlink" href="#wait" title="Permanent link">&para;</a></h2>
-<p>Pauses execution for at least the specified duration. Returns actual time waited.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">task</span><span class="p">.</span><span class="nf">wait</span><span class="p">(</span><span class="nv">duration</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="err">?</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">number</span>
+<h3 id="uuidparses"><code>uuid.parse(s)</code><a class="headerlink" href="#uuidparses" title="Permanent link">&para;</a></h3>
+<p>Parses a UUID string into a 16-byte buffer.</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">buf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">550</span><span class="s2">e8400-e29b-41d4-a716-446655440000&quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nf">print</span><span class="p">(</span><span class="err">#</span><span class="nb">buffer</span><span class="p">.</span><span class="nf">tostring</span><span class="p">(</span><span class="nv">buf</span><span class="p">))</span><span class="w"> </span><span class="c1">-- 16</span>
 </span></code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Minimum wait accuracy is limited by the OS sleep implementation (typically ~5ms).</p>
-</div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>s</code></td>
+<td><code>string</code></td>
+<td>A valid UUID string</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>buffer?</code> - 16-byte buffer, or <code>nil</code> if invalid</p>
 <hr />
-<h2 id="cancel">cancel<a class="headerlink" href="#cancel" title="Permanent link">&para;</a></h2>
-<p>Cancels a scheduled thread.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">task</span><span class="p">.</span><span class="nf">cancel</span><span class="p">(</span><span class="nv">thread</span><span class="p">:</span><span class="w"> </span><span class="py">thread</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">()</span>
+<h3 id="uuidformatbuf"><code>uuid.format(buf)</code><a class="headerlink" href="#uuidformatbuf" title="Permanent link">&para;</a></h3>
+<p>Formats a 16-byte buffer as a UUID string.</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">buf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="nv">id</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">format</span><span class="p">(</span><span class="nv">buf</span><span class="p">)</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1">-- str == id</span>
 </span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>buf</code></td>
+<td><code>buffer</code></td>
+<td>A 16-byte buffer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <code>string</code> - The formatted UUID</p>
 <hr />
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">task</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/task&quot;</span><span class="p">)</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="c1">-- Wait</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Starting&quot;</span><span class="p">)</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kd">local</span><span class="w"> </span><span class="nv">elapsed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">task</span><span class="p">.</span><span class="nf">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Waited&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">elapsed</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;seconds&quot;</span><span class="p">)</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1">-- Spawn concurrent task</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nv">task</span><span class="p">.</span><span class="nf">spawn</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Task running&quot;</span><span class="p">)</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="nv">task</span><span class="p">.</span><span class="nf">wait</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Task done&quot;</span><span class="p">)</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="kr">end</span><span class="p">)</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Main continues immediately&quot;</span><span class="p">)</span>
-</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
-</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="c1">-- Delay</span>
-</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="nv">task</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span>
-</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Runs after 2 seconds&quot;</span><span class="p">)</span>
-</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="kr">end</span><span class="p">)</span>
-</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
-</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="c1">-- Defer</span>
-</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="nv">task</span><span class="p">.</span><span class="nf">defer</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
-</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Runs after current function&quot;</span><span class="p">)</span>
-</span><span id="__span-6-24"><a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="kr">end</span><span class="p">)</span>
-</span><span id="__span-6-25"><a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Runs first&quot;</span><span class="p">)</span>
-</span><span id="__span-6-26"><a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>
-</span><span id="__span-6-27"><a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="c1">-- Cancel</span>
-</span><span id="__span-6-28"><a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="kd">local</span><span class="w"> </span><span class="nv">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">task</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span>
-</span><span id="__span-6-29"><a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This won&#39;t run&quot;</span><span class="p">)</span>
-</span><span id="__span-6-30"><a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a><span class="kr">end</span><span class="p">)</span>
-</span><span id="__span-6-31"><a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="nv">task</span><span class="p">.</span><span class="nf">cancel</span><span class="p">(</span><span class="nv">t</span><span class="p">)</span>
-</span><span id="__span-6-32"><a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>
-</span><span id="__span-6-33"><a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a><span class="c1">-- Parallel tasks</span>
-</span><span id="__span-6-34"><a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="kr">do</span>
-</span><span id="__span-6-35"><a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="w">    </span><span class="nv">task</span><span class="p">.</span><span class="nf">spawn</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
-</span><span id="__span-6-36"><a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a><span class="w">        </span><span class="nv">task</span><span class="p">.</span><span class="nf">wait</span><span class="p">(</span><span class="nv">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.1</span><span class="p">)</span>
-</span><span id="__span-6-37"><a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a><span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Task&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">i</span><span class="p">)</span>
-</span><span id="__span-6-38"><a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a><span class="w">    </span><span class="kr">end</span><span class="p">)</span>
-</span><span id="__span-6-39"><a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a><span class="kr">end</span>
-</span><span id="__span-6-40"><a id="__codelineno-6-40" name="__codelineno-6-40" href="#__codelineno-6-40"></a><span class="nv">task</span><span class="p">.</span><span class="nf">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<h2 id="constants">Constants<a class="headerlink" href="#constants" title="Permanent link">&para;</a></h2>
+<h3 id="uuidnil"><code>uuid.nil</code><a class="headerlink" href="#uuidnil" title="Permanent link">&para;</a></h3>
+<p>The nil UUID constant (all zeros).</p>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nf">print</span><span class="p">(</span><span class="nv">uuid</span><span class="p">[</span><span class="s2">&quot;nil&quot;</span><span class="p">])</span><span class="w"> </span><span class="c1">-- &quot;00000000-0000-0000-0000-000000000000&quot;</span>
+</span></code></pre></div>
+<h2 id="use-cases">Use Cases<a class="headerlink" href="#use-cases" title="Permanent link">&para;</a></h2>
+<div class="language-luau highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">-- Database primary keys</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">userId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">v4</span><span class="p">()</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1">-- Time-ordered records (sortable)</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="kd">local</span><span class="w"> </span><span class="nv">eventId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">v7</span><span class="p">()</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1">-- Check if valid before processing</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="kr">if</span><span class="w"> </span><span class="nv">uuid</span><span class="p">.</span><span class="nf">isValid</span><span class="p">(</span><span class="nv">inputId</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="nf">processId</span><span class="p">(</span><span class="nv">inputId</span><span class="p">)</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="kr">end</span>
 </span></code></pre></div>
 
 
