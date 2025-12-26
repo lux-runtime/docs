@@ -1050,6 +1050,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#alignof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alignof
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offsetof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        offsetof
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addressof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        addressof
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metatype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        metatype
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        batch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        batch2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gc" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1617,6 +1683,72 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#alignof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        alignof
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#offsetof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        offsetof
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addressof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        addressof
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metatype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        metatype
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        batch
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        batch2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gc" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1829,14 +1961,52 @@
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">istype</span><span class="p">(</span><span class="nv">typeName</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">,</span><span class="w"> </span><span class="nv">cdata</span><span class="p">:</span><span class="w"> </span><span class="py">CData</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">boolean</span>
 </span></code></pre></div>
 <hr />
+<hr />
+<h2 id="alignof">alignof<a class="headerlink" href="#alignof" title="Permanent link">&para;</a></h2>
+<p>Gets the alignment of a type in bytes.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">alignof</span><span class="p">(</span><span class="nv">typeName</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">number</span>
+</span></code></pre></div>
+<hr />
+<h2 id="offsetof">offsetof<a class="headerlink" href="#offsetof" title="Permanent link">&para;</a></h2>
+<p>Gets the offset of a field in a struct.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">offsetof</span><span class="p">(</span><span class="nv">typeName</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">,</span><span class="w"> </span><span class="nv">fieldName</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">number</span>
+</span></code></pre></div>
+<hr />
+<h2 id="addressof">addressof<a class="headerlink" href="#addressof" title="Permanent link">&para;</a></h2>
+<p>Gets the address of a CData object.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">addressof</span><span class="p">(</span><span class="nv">cdata</span><span class="p">:</span><span class="w"> </span><span class="py">CData</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">CData</span>
+</span></code></pre></div>
+<p>Returns a pointer (<code>void*</code>) to the data.</p>
+<hr />
+<h2 id="metatype">metatype<a class="headerlink" href="#metatype" title="Permanent link">&para;</a></h2>
+<p>Associates a metatable with a C type.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">metatype</span><span class="p">(</span><span class="nv">typeName</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">,</span><span class="w"> </span><span class="nv">metatable</span><span class="p">:</span><span class="w"> </span><span class="py">table</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">CData</span>
+</span></code></pre></div>
+<p>The metatable can define methods and metamethods (like <code>__tostring</code>, <code>__add</code>, <code>__index</code>) for the C type.</p>
+<hr />
+<h2 id="batch">batch<a class="headerlink" href="#batch" title="Permanent link">&para;</a></h2>
+<p>Creates a batch allocator for high-performance zero-allocation loops.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">batch</span><span class="p">(</span><span class="nv">size</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">Batch</span>
+</span></code></pre></div>
+<p><strong>Batch methods:</strong></p>
+<ul>
+<li><code>add(cdata: CData) -&gt; CData</code> - Adds a CData to the batch (copy).</li>
+<li><code>commit() -&gt; ()</code> - Commits changes.</li>
+</ul>
+<hr />
+<h2 id="batch2">batch2<a class="headerlink" href="#batch2" title="Permanent link">&para;</a></h2>
+<p>Optimized batch allocator for fixed-size structs.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">batch2</span><span class="o">&lt;</span><span class="nv">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">typeName</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">,</span><span class="w"> </span><span class="nv">count</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">Batch2</span><span class="o">&lt;</span><span class="nv">T</span><span class="o">&gt;</span>
+</span></code></pre></div>
+<hr />
 <h2 id="gc">gc<a class="headerlink" href="#gc" title="Permanent link">&para;</a></h2>
 <p>Sets a finalizer for a CData (called when garbage collected).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">gc</span><span class="p">(</span><span class="nv">cdata</span><span class="p">:</span><span class="w"> </span><span class="py">CData</span><span class="p">,</span><span class="w"> </span><span class="nv">finalizer</span><span class="p">:</span><span class="w"> </span><span class="err">(</span><span class="py">cdata</span><span class="p">:</span><span class="w"> </span><span class="py">CData</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">())</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">table</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="nf">gc</span><span class="p">(</span><span class="nv">cdata</span><span class="p">:</span><span class="w"> </span><span class="py">CData</span><span class="p">,</span><span class="w"> </span><span class="nv">finalizer</span><span class="p">:</span><span class="w"> </span><span class="err">(</span><span class="py">cdata</span><span class="p">:</span><span class="w"> </span><span class="py">CData</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">())</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">table</span>
 </span></code></pre></div>
 <hr />
 <h2 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h2>
 <p>Access to the system C library (msvcrt on Windows, libc on Linux/macOS).</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">C</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">C</span>
 </span></code></pre></div>
 <hr />
 <h2 id="supported-c-types">Supported C Types<a class="headerlink" href="#supported-c-types" title="Permanent link">&para;</a></h2>
@@ -1909,72 +2079,72 @@
 <hr />
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="struct-usage">Struct Usage<a class="headerlink" href="#struct-usage" title="Permanent link">&para;</a></h3>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">ffi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/ffi&quot;</span><span class="p">)</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="s">    typedef struct Point {</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="s">        int x;</span>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="s">        int y;</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="s">    } Point;</span>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="s">]]</span>
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>
-</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="kd">local</span><span class="w"> </span><span class="nv">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;Point&quot;</span><span class="p">)</span>
-</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="nv">point</span><span class="p">.</span><span class="py">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span>
-</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="nv">point</span><span class="p">.</span><span class="py">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span>
-</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>
-</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="nb">print</span><span class="p">(</span><span class="nv">point</span><span class="p">.</span><span class="py">x</span><span class="p">,</span><span class="w"> </span><span class="nv">point</span><span class="p">.</span><span class="py">y</span><span class="p">)</span>
-</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Size:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">sizeof</span><span class="p">(</span><span class="s2">&quot;Point&quot;</span><span class="p">))</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">ffi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/ffi&quot;</span><span class="p">)</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="s">    typedef struct Point {</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="s">        int x;</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="s">        int y;</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="s">    } Point;</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="s">]]</span>
+</span><span id="__span-23-9"><a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>
+</span><span id="__span-23-10"><a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="kd">local</span><span class="w"> </span><span class="nv">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;Point&quot;</span><span class="p">)</span>
+</span><span id="__span-23-11"><a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="nv">point</span><span class="p">.</span><span class="py">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span>
+</span><span id="__span-23-12"><a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="nv">point</span><span class="p">.</span><span class="py">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">200</span>
+</span><span id="__span-23-13"><a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>
+</span><span id="__span-23-14"><a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="nb">print</span><span class="p">(</span><span class="nv">point</span><span class="p">.</span><span class="py">x</span><span class="p">,</span><span class="w"> </span><span class="nv">point</span><span class="p">.</span><span class="py">y</span><span class="p">)</span>
+</span><span id="__span-23-15"><a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Size:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">sizeof</span><span class="p">(</span><span class="s2">&quot;Point&quot;</span><span class="p">))</span>
 </span></code></pre></div>
 <h3 id="arrays">Arrays<a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h3>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="s">    typedef struct Buffer {</span>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="s">        int size;</span>
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="s">        char data[256];</span>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="s">    } Buffer;</span>
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="s">]]</span>
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="c1">-- Fixed-size array in struct</span>
-</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="kd">local</span><span class="w"> </span><span class="nv">buf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;Buffer&quot;</span><span class="p">)</span>
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="nv">buf</span><span class="p">.</span><span class="py">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">256</span>
-</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>
-</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="c1">-- Variable-length array</span>
-</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="kd">local</span><span class="w"> </span><span class="nv">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;int[?]&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">)</span>
-</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">999</span><span class="w"> </span><span class="kr">do</span>
-</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">    </span><span class="nv">arr</span><span class="p">[</span><span class="nv">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span>
-</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="kr">end</span>
-</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="nb">print</span><span class="p">(</span><span class="nv">arr</span><span class="p">[</span><span class="mi">500</span><span class="p">])</span><span class="w"> </span><span class="c1">-- 1000</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="s">    typedef struct Buffer {</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="s">        int size;</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="s">        char data[256];</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="s">    } Buffer;</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="s">]]</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="c1">-- Fixed-size array in struct</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="kd">local</span><span class="w"> </span><span class="nv">buf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;Buffer&quot;</span><span class="p">)</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="nv">buf</span><span class="p">.</span><span class="py">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">256</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="c1">-- Variable-length array</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="kd">local</span><span class="w"> </span><span class="nv">arr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s2">&quot;int[?]&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">)</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">999</span><span class="w"> </span><span class="kr">do</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a><span class="w">    </span><span class="nv">arr</span><span class="p">[</span><span class="nv">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a><span class="kr">end</span>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="nb">print</span><span class="p">(</span><span class="nv">arr</span><span class="p">[</span><span class="mi">500</span><span class="p">])</span><span class="w"> </span><span class="c1">-- 1000</span>
 </span></code></pre></div>
 <h3 id="enums">Enums<a class="headerlink" href="#enums" title="Permanent link">&para;</a></h3>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="s">    typedef enum {</span>
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="s">        MODE_READ = 1,</span>
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="s">        MODE_WRITE = 2,</span>
-</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="s">        MODE_APPEND = 4</span>
-</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="s">    } FileMode;</span>
-</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="s">]]</span>
-</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>
-</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="nb">print</span><span class="p">(</span><span class="nv">ffi</span><span class="p">.</span><span class="nf">sizeof</span><span class="p">(</span><span class="s2">&quot;FileMode&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">-- 4</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="s">    typedef enum {</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="s">        MODE_READ = 1,</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="s">        MODE_WRITE = 2,</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="s">        MODE_APPEND = 4</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="s">    } FileMode;</span>
+</span><span id="__span-25-7"><a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="s">]]</span>
+</span><span id="__span-25-8"><a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>
+</span><span id="__span-25-9"><a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="nb">print</span><span class="p">(</span><span class="nv">ffi</span><span class="p">.</span><span class="nf">sizeof</span><span class="p">(</span><span class="s2">&quot;FileMode&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">-- 4</span>
 </span></code></pre></div>
 <h3 id="loading-libraries">Loading Libraries<a class="headerlink" href="#loading-libraries" title="Permanent link">&para;</a></h3>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">ffi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/ffi&quot;</span><span class="p">)</span>
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="c1">-- Define function signature</span>
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="s">    int printf(const char* fmt, ...);</span>
-</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="s">]]</span>
-</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
-</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="c1">-- Use system C library</span>
-</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">C</span><span class="p">.</span><span class="nf">printf</span><span class="p">(</span><span class="s2">&quot;Hello from C!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">ffi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/ffi&quot;</span><span class="p">)</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="c1">-- Define function signature</span>
+</span><span id="__span-26-4"><a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">cdef</span><span class="s">[[</span>
+</span><span id="__span-26-5"><a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="s">    int printf(const char* fmt, ...);</span>
+</span><span id="__span-26-6"><a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="s">]]</span>
+</span><span id="__span-26-7"><a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>
+</span><span id="__span-26-8"><a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="c1">-- Use system C library</span>
+</span><span id="__span-26-9"><a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="nv">ffi</span><span class="p">.</span><span class="py">C</span><span class="p">.</span><span class="nf">printf</span><span class="p">(</span><span class="s2">&quot;Hello from C!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <h3 id="callbacks">Callbacks<a class="headerlink" href="#callbacks" title="Permanent link">&para;</a></h3>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">ffi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/ffi&quot;</span><span class="p">)</span>
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
-</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="c1">-- Create callback</span>
-</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="kd">local</span><span class="w"> </span><span class="nv">myCb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">callback</span><span class="p">(</span><span class="s2">&quot;int(*)(int, int)&quot;</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="nv">a</span><span class="p">,</span><span class="w"> </span><span class="nv">b</span><span class="p">)</span>
-</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">b</span>
-</span><span id="__span-21-6"><a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="kr">end</span><span class="p">)</span>
-</span><span id="__span-21-7"><a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
-</span><span id="__span-21-8"><a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="c1">-- Can be passed to C functions expecting function pointers</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">ffi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/ffi&quot;</span><span class="p">)</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="c1">-- Create callback</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="kd">local</span><span class="w"> </span><span class="nv">myCb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">callback</span><span class="p">(</span><span class="s2">&quot;int(*)(int, int)&quot;</span><span class="p">,</span><span class="w"> </span><span class="kr">function</span><span class="p">(</span><span class="nv">a</span><span class="p">,</span><span class="w"> </span><span class="nv">b</span><span class="p">)</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nv">b</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="kr">end</span><span class="p">)</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+</span><span id="__span-27-8"><a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="c1">-- Can be passed to C functions expecting function pointers</span>
 </span></code></pre></div>
 
 
@@ -2013,7 +2183,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 Lux Runtime
+      Copyright &copy; 2025 Ryan Henrique
     </div>
   
   

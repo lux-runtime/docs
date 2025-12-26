@@ -1371,6 +1371,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#high-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#batch-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Batch Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1589,6 +1617,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#high-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        High Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="High Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#batch-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Batch Processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1713,6 +1769,20 @@
 <li>Use <code>sizeof</code> to verify type sizes</li>
 <li>Wrap calls in <code>pcall</code> for error handling</li>
 </ol>
+<hr />
+<h2 id="high-performance">High Performance<a class="headerlink" href="#high-performance" title="Permanent link">&para;</a></h2>
+<h3 id="batch-processing">Batch Processing<a class="headerlink" href="#batch-processing" title="Permanent link">&para;</a></h3>
+<p>When working with many C structs in a loop (e.g., thousands of particles), creating new standard CData objects for each iteration can cause GC pressure.</p>
+<p>The <code>ffi.batch</code> and <code>ffi.batch2</code> functions provide a way to allocate memory once and reuse it or manage it manually.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">-- Batch2 for array-like access</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kd">local</span><span class="w"> </span><span class="nv">batch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">ffi</span><span class="p">.</span><span class="nf">batch2</span><span class="p">(</span><span class="s2">&quot;Point&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">)</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">999</span><span class="w"> </span><span class="kr">do</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">batch</span><span class="p">[</span><span class="nv">i</span><span class="p">]</span><span class="w"> </span><span class="c1">-- No allocation, returns reference to internal memory</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="nv">p</span><span class="p">.</span><span class="py">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">i</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="nv">p</span><span class="p">.</span><span class="py">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="kr">end</span>
+</span></code></pre></div>
 
 
 
@@ -1750,7 +1820,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 Lux Runtime
+      Copyright &copy; 2025 Ryan Henrique
     </div>
   
   

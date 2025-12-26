@@ -912,32 +912,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fromisodate-deprecated" class="md-nav__link">
+  <a href="#fromisodate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        fromIsoDate (deprecated)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fromrfc3339" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        fromRfc3339
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fromrfc2822" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        fromRfc2822
+        fromIsoDate
       
     </span>
   </a>
@@ -1017,32 +995,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#toisodate-deprecated" class="md-nav__link">
+  <a href="#toisodate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        toIsoDate (deprecated)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#torfc3339" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        toRfc3339
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#torfc2822" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        toRfc2822
+        toIsoDate
       
     </span>
   </a>
@@ -1580,32 +1536,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#fromisodate-deprecated" class="md-nav__link">
+  <a href="#fromisodate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        fromIsoDate (deprecated)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fromrfc3339" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        fromRfc3339
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fromrfc2822" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        fromRfc2822
+        fromIsoDate
       
     </span>
   </a>
@@ -1685,32 +1619,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#toisodate-deprecated" class="md-nav__link">
+  <a href="#toisodate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        toIsoDate (deprecated)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#torfc3339" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        toRfc3339
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#torfc2822" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        toRfc2822
+        toIsoDate
       
     </span>
   </a>
@@ -1797,68 +1709,52 @@
 <p>Creates DateTime from local time components.</p>
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromLocalTime</span><span class="p">(</span><span class="nv">values</span><span class="p">:</span><span class="w"> </span><span class="py">DateTimeValues</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTime</span>
 </span></code></pre></div>
-<h3 id="fromisodate-deprecated">fromIsoDate (deprecated)<a class="headerlink" href="#fromisodate-deprecated" title="Permanent link">&para;</a></h3>
-<p>Creates DateTime from ISO 8601 string. Use <code>fromRfc3339</code> instead.</p>
+<h3 id="fromisodate">fromIsoDate<a class="headerlink" href="#fromisodate" title="Permanent link">&para;</a></h3>
+<p>Creates DateTime from ISO 8601 / RFC 3339 string.</p>
 <div class="language-lua highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromIsoDate</span><span class="p">(</span><span class="nv">isoDate</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTime</span>
-</span></code></pre></div>
-<h3 id="fromrfc3339">fromRfc3339<a class="headerlink" href="#fromrfc3339" title="Permanent link">&para;</a></h3>
-<p>Creates DateTime from RFC 3339 string.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromRfc3339</span><span class="p">(</span><span class="nv">rfc3339Date</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTime</span>
-</span></code></pre></div>
-<h3 id="fromrfc2822">fromRfc2822<a class="headerlink" href="#fromrfc2822" title="Permanent link">&para;</a></h3>
-<p>Creates DateTime from RFC 2822 string.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromRfc2822</span><span class="p">(</span><span class="nv">rfc2822Date</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTime</span>
 </span></code></pre></div>
 <hr />
 <h2 id="datetime-properties">DateTime Properties<a class="headerlink" href="#datetime-properties" title="Permanent link">&para;</a></h2>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">DateTime</span><span class="p">.</span><span class="py">unixTimestamp</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w">       </span><span class="c1">-- Seconds since Unix epoch</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nv">DateTime</span><span class="p">.</span><span class="py">unixTimestampMillis</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="c1">-- Milliseconds since Unix epoch</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nv">DateTime</span><span class="p">.</span><span class="py">unixTimestamp</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w">       </span><span class="c1">-- Seconds since Unix epoch</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nv">DateTime</span><span class="p">.</span><span class="py">unixTimestampMillis</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="w"> </span><span class="c1">-- Milliseconds since Unix epoch</span>
 </span></code></pre></div>
 <hr />
 <h2 id="datetime-methods">DateTime Methods<a class="headerlink" href="#datetime-methods" title="Permanent link">&para;</a></h2>
 <h3 id="touniversaltime">toUniversalTime<a class="headerlink" href="#touniversaltime" title="Permanent link">&para;</a></h3>
 <p>Extracts UTC time components.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toUniversalTime</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTimeValues</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toUniversalTime</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTimeValues</span>
 </span></code></pre></div>
 <h3 id="tolocaltime">toLocalTime<a class="headerlink" href="#tolocaltime" title="Permanent link">&para;</a></h3>
 <p>Extracts local time components.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toLocalTime</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTimeValues</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toLocalTime</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">DateTimeValues</span>
 </span></code></pre></div>
 <h3 id="formatuniversaltime">formatUniversalTime<a class="headerlink" href="#formatuniversaltime" title="Permanent link">&para;</a></h3>
 <p>Formats as UTC using strftime pattern.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">formatUniversalTime</span><span class="p">(</span><span class="nv">formatString</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">locale</span><span class="p">:</span><span class="w"> </span><span class="py">Locale</span><span class="err">?</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">formatUniversalTime</span><span class="p">(</span><span class="nv">formatString</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">locale</span><span class="p">:</span><span class="w"> </span><span class="py">Locale</span><span class="err">?</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
 </span></code></pre></div>
 <h3 id="formatlocaltime">formatLocalTime<a class="headerlink" href="#formatlocaltime" title="Permanent link">&para;</a></h3>
 <p>Formats as local time using strftime pattern.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">formatLocalTime</span><span class="p">(</span><span class="nv">formatString</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">locale</span><span class="p">:</span><span class="w"> </span><span class="py">Locale</span><span class="err">?</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">formatLocalTime</span><span class="p">(</span><span class="nv">formatString</span><span class="p">:</span><span class="w"> </span><span class="py">string</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="nv">locale</span><span class="p">:</span><span class="w"> </span><span class="py">Locale</span><span class="err">?</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
 </span></code></pre></div>
-<h3 id="toisodate-deprecated">toIsoDate (deprecated)<a class="headerlink" href="#toisodate-deprecated" title="Permanent link">&para;</a></h3>
-<p>Returns ISO 8601 string. Use <code>toRfc3339</code> instead.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toIsoDate</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
-</span></code></pre></div>
-<h3 id="torfc3339">toRfc3339<a class="headerlink" href="#torfc3339" title="Permanent link">&para;</a></h3>
-<p>Returns RFC 3339 string.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toRfc3339</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
-</span></code></pre></div>
-<h3 id="torfc2822">toRfc2822<a class="headerlink" href="#torfc2822" title="Permanent link">&para;</a></h3>
-<p>Returns RFC 2822 string.</p>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toRfc2822</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
+<h3 id="toisodate">toIsoDate<a class="headerlink" href="#toisodate" title="Permanent link">&para;</a></h3>
+<p>Returns ISO 8601 string.</p>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nv">DateTime</span><span class="p">:</span><span class="nf">toIsoDate</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nv">string</span>
 </span></code></pre></div>
 <hr />
 <h2 id="types">Types<a class="headerlink" href="#types" title="Permanent link">&para;</a></h2>
 <p><strong>DateTimeValues:</strong>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">DateTimeValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="nv">year</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">        </span><span class="c1">-- 1400 -&gt; 9999</span>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">    </span><span class="nv">month</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">       </span><span class="c1">-- 1 -&gt; 12</span>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="nv">day</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">         </span><span class="c1">-- 1 -&gt; 31</span>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span><span class="nv">hour</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">        </span><span class="c1">-- 0 -&gt; 23</span>
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">    </span><span class="nv">minute</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">      </span><span class="c1">-- 0 -&gt; 59</span>
-</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">    </span><span class="nv">second</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">      </span><span class="c1">-- 0 -&gt; 60 (60 = leap second)</span>
-</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="nv">millisecond</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 0 -&gt; 999 (optional for input, always present in output)</span>
-</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="p">}</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">DateTimeValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="nv">year</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">        </span><span class="c1">-- 1400 -&gt; 9999</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="nv">month</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">       </span><span class="c1">-- 1 -&gt; 12</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="nv">day</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">         </span><span class="c1">-- 1 -&gt; 31</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span><span class="nv">hour</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">        </span><span class="c1">-- 0 -&gt; 23</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="nv">minute</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">      </span><span class="c1">-- 0 -&gt; 59</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="nv">second</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="p">,</span><span class="w">      </span><span class="c1">-- 0 -&gt; 60 (60 = leap second)</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="nv">millisecond</span><span class="p">:</span><span class="w"> </span><span class="py">number</span><span class="err">?</span><span class="p">,</span><span class="w"> </span><span class="c1">-- 0 -&gt; 999 (optional for input, always present in output)</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="p">}</span>
 </span></code></pre></div></p>
 <p><strong>Locale:</strong>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Locale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;de&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;es&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;fr&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;it&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;ja&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;pl&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;pt-br&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;pt&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;tr&quot;</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">type</span><span class="w"> </span><span class="nv">Locale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;de&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;es&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;fr&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;it&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;ja&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;pl&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;pt-br&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;pt&quot;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;tr&quot;</span>
 </span></code></pre></div></p>
 <hr />
 <h2 id="format-tokens">Format Tokens<a class="headerlink" href="#format-tokens" title="Permanent link">&para;</a></h2>
@@ -1916,35 +1812,35 @@
 <p>See <a href="https://docs.rs/chrono/latest/chrono/format/strftime/index.html">chrono documentation</a> for all tokens.</p>
 <hr />
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<div class="language-lua highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">datetime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/datetime&quot;</span><span class="p">)</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="c1">-- Current time</span>
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="kd">local</span><span class="w"> </span><span class="nv">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">()</span>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">.</span><span class="py">unixTimestamp</span><span class="p">)</span>
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="c1">-- Formatting</span>
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">toRfc3339</span><span class="p">())</span><span class="w">             </span><span class="c1">-- 2024-12-25T15:30:00Z</span>
-</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">toRfc2822</span><span class="p">())</span><span class="w">             </span><span class="c1">-- Wed, 25 Dec 2024 15:30:00 +0000</span>
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">formatLocalTime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-%d %H:%M:%S&quot;</span><span class="p">))</span>
-</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">formatLocalTime</span><span class="p">(</span><span class="s2">&quot;%A, %d %B %Y&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;fr&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">-- French locale</span>
-</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
-</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1">-- From timestamp</span>
-</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="kd">local</span><span class="w"> </span><span class="nv">past</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromUnixTimestamp</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="nb">print</span><span class="p">(</span><span class="nv">past</span><span class="p">:</span><span class="nf">toRfc3339</span><span class="p">())</span><span class="w"> </span><span class="c1">-- 1970-01-01T00:00:00Z</span>
-</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>
-</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="c1">-- From components</span>
-</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="kd">local</span><span class="w"> </span><span class="nv">custom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromLocalTime</span><span class="p">({</span>
-</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="w">    </span><span class="nv">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2024</span><span class="p">,</span><span class="w"> </span><span class="nv">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="nv">day</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span>
-</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="w">    </span><span class="nv">hour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="nv">minute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nv">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
-</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="p">})</span>
-</span><span id="__span-18-22"><a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a>
-</span><span id="__span-18-23"><a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a><span class="c1">-- Extract components</span>
-</span><span id="__span-18-24"><a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a><span class="kd">local</span><span class="w"> </span><span class="nv">parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">now</span><span class="p">:</span><span class="nf">toLocalTime</span><span class="p">()</span>
-</span><span id="__span-18-25"><a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a><span class="nb">print</span><span class="p">(</span><span class="nv">parts</span><span class="p">.</span><span class="py">year</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">month</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">day</span><span class="p">)</span>
-</span><span id="__span-18-26"><a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a><span class="nb">print</span><span class="p">(</span><span class="nv">parts</span><span class="p">.</span><span class="py">hour</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">minute</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">second</span><span class="p">)</span>
-</span><span id="__span-18-27"><a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a>
-</span><span id="__span-18-28"><a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="c1">-- Parse RFC 3339</span>
-</span><span id="__span-18-29"><a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="kd">local</span><span class="w"> </span><span class="nv">parsed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromRfc3339</span><span class="p">(</span><span class="s2">&quot;2024-12-25T12:00:00Z&quot;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kd">local</span><span class="w"> </span><span class="nv">datetime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;@lux/datetime&quot;</span><span class="p">)</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1">-- Current time</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="kd">local</span><span class="w"> </span><span class="nv">now</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">()</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">.</span><span class="py">unixTimestamp</span><span class="p">)</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="c1">-- Formatting</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">toRfc3339</span><span class="p">())</span><span class="w">             </span><span class="c1">-- 2024-12-25T15:30:00Z</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">toRfc2822</span><span class="p">())</span><span class="w">             </span><span class="c1">-- Wed, 25 Dec 2024 15:30:00 +0000</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">formatLocalTime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-%d %H:%M:%S&quot;</span><span class="p">))</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="nb">print</span><span class="p">(</span><span class="nv">now</span><span class="p">:</span><span class="nf">formatLocalTime</span><span class="p">(</span><span class="s2">&quot;%A, %d %B %Y&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;fr&quot;</span><span class="p">))</span><span class="w"> </span><span class="c1">-- French locale</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="c1">-- From timestamp</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="kd">local</span><span class="w"> </span><span class="nv">past</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromUnixTimestamp</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="nb">print</span><span class="p">(</span><span class="nv">past</span><span class="p">:</span><span class="nf">toRfc3339</span><span class="p">())</span><span class="w"> </span><span class="c1">-- 1970-01-01T00:00:00Z</span>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="c1">-- From components</span>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="kd">local</span><span class="w"> </span><span class="nv">custom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromLocalTime</span><span class="p">({</span>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="w">    </span><span class="nv">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2024</span><span class="p">,</span><span class="w"> </span><span class="nv">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="nv">day</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">25</span><span class="p">,</span>
+</span><span id="__span-14-20"><a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a><span class="w">    </span><span class="nv">hour</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w"> </span><span class="nv">minute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nv">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+</span><span id="__span-14-21"><a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="p">})</span>
+</span><span id="__span-14-22"><a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>
+</span><span id="__span-14-23"><a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a><span class="c1">-- Extract components</span>
+</span><span id="__span-14-24"><a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a><span class="kd">local</span><span class="w"> </span><span class="nv">parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">now</span><span class="p">:</span><span class="nf">toLocalTime</span><span class="p">()</span>
+</span><span id="__span-14-25"><a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a><span class="nb">print</span><span class="p">(</span><span class="nv">parts</span><span class="p">.</span><span class="py">year</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">month</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">day</span><span class="p">)</span>
+</span><span id="__span-14-26"><a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="nb">print</span><span class="p">(</span><span class="nv">parts</span><span class="p">.</span><span class="py">hour</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">minute</span><span class="p">,</span><span class="w"> </span><span class="nv">parts</span><span class="p">.</span><span class="py">second</span><span class="p">)</span>
+</span><span id="__span-14-27"><a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a>
+</span><span id="__span-14-28"><a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a><span class="c1">-- Parse RFC 3339</span>
+</span><span id="__span-14-29"><a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a><span class="kd">local</span><span class="w"> </span><span class="nv">parsed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">datetime</span><span class="p">.</span><span class="nf">fromRfc3339</span><span class="p">(</span><span class="s2">&quot;2024-12-25T12:00:00Z&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 
 
@@ -1983,7 +1879,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024 Lux Runtime
+      Copyright &copy; 2025 Ryan Henrique
     </div>
   
   
